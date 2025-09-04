@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload Posts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="uploadBtn">Upload</button>
+
+  <div id="posts" class="grid"></div>
+
+  <!-- Upload Modal -->
+  <div id="uploadModal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal" class="close-btn">x</button>
+      <input type="text" id="postTitle" placeholder="Title" />
+      <textarea id="postDesc" placeholder="Description"></textarea>
+      <input type="number" id="postPrice" placeholder="Price" />
+      <input type="file" id="postImages" accept="image/*" multiple />
+      <div id="preview" class="preview"></div>
+      <button id="postBtn">Post</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
